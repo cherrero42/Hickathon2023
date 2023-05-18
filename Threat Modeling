@@ -1,0 +1,72 @@
+Threat Modeling Connect about an intranet web
+ 
+Considering an example of an intranet web project [https://github.com/Hickathon2023/Hickathon] aimed at providing absence days management for an office environment. We'll walk through the steps of connecting threat modeling and design to evaluate the project.
+ 
+1. Identify the Project Scope:
+   - Target Environment: Office
+   - Project Objective: Develop an intranet web application for managing absence days efficiently and accurately.
+ 
+2. Conduct a Threat Modeling Exercise:
+   a. Identify Assets:
+      - Employee data (personal information, attendance records)
+      - System infrastructure (servers, databases, network)
+      - Confidential company information
+ 
+   b. Identify Threats:
+      - Unauthorized access to the absence management system
+      - Insider attacks or misuse of privileges
+      - Data breaches compromising employee information
+      - Service interruptions or system failures
+ 
+   c. Assess Vulnerabilities:
+      - Weak authentication mechanisms (e.g., weak passwords or lack of multi-factor authentication)
+      - Insecure data storage or transmission
+      - Insufficient access controls and permissions
+      - Lack of system monitoring and auditing
+ 
+   d. Rate Risks:
+      - Evaluate the impact and likelihood of each identified threat and vulnerability combination to prioritize them for mitigation. For example, unauthorized access to employee data may have a medium impact and high likelihood, while a data breach could have a high impact and low likelihood.
+ 
+3. Develop Countermeasures and Mitigation Strategies:
+   a. Design Security Controls:
+      - Implement strong authentication mechanisms, such as password policies and multi-factor authentication.
+      - Encrypt sensitive data in transit and at rest.
+      - Apply access controls and permissions based on the principle of least privilege.
+      - Implement intrusion detection and prevention systems to monitor and mitigate potential attacks.
+      - Regularly update and patch software components to address known vulnerabilities.
+ 
+   b. Implement Secure Design Principles:
+      - Employ secure coding practices to prevent common vulnerabilities like SQL injection or cross-site scripting (XSS).
+      - Separate user roles and responsibilities to enforce access control and segregation of duties.
+      - Implement secure session management to prevent session hijacking or fixation attacks.
+      - Employ secure communication protocols (e.g., HTTPS) to protect data during transmission.
+      - Conduct regular security awareness training for employees to promote good security practices.
+ 
+   c. Establish Incident Response Plan:
+      - Develop a detailed plan outlining the steps to be taken in case of a security incident, including incident reporting, containment, eradication, and recovery procedures.
+      - Assign roles and responsibilities within the incident response team.
+      - Regularly test and update the incident response plan to ensure its effectiveness.
+ 
+4. Evaluate the Design:
+   a. Review System Architecture:
+      - Assess the overall architecture of the intranet web application, including server infrastructure, network components, and databases.
+      - Identify potential design flaws, scalability issues, and compatibility with existing systems.
+ 
+   b. Conduct Penetration Testing:
+      - Engage security professionals to conduct penetration tests on the intranet web application.
+      - Identify vulnerabilities and potential attack vectors, such as input validation issues or insecure configurations.
+      - Verify the effectiveness of security controls and identify any weaknesses in the system.
+ 
+   c. Test Usability and User Experience:
+      - Conduct user testing to evaluate the system's usability, intuitiveness, and efficiency in managing absence days.
+      - Gather feedback from users to address any usability issues and improve the overall user experience.
+ 
+5. Iterate and Improve:
+   a. Gather Feedback:
+      - Collect feedback from employees, HR personnel, and security experts regarding the system's functionality, security, and user experience.
+      - Encourage users to report any security incidents or vulnerabilities they encounter.
+ 
+   b. Incorporate Lessons Learned:
+      - Analyze the feedback received and identify areas of improvement.
+      - Address any reported security vulnerabilities or usability issues.
+ 
